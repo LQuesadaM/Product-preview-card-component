@@ -1,14 +1,5 @@
 @charset "UTF-8";
 
-/* Typical Device Breakpoints 
-------------------------------
-pequenas telas: até 600px
-Celulares: de 600px até 768px
-Tablet: 768px até 992px
-Deskopt: 992px até 1200px
-Grandes Telas: acima de 1200px
- */
-
  @media screen and (min-width:768px) {
     .card {
         height: 450px;
@@ -19,16 +10,22 @@ Grandes Telas: acima de 1200px
         display: flex;
     }
 
-    .card__first-section {
-        width: 301px;
-        display: flex;
-    }
-
     .card__first-section__image {
         content: url(../images/image-product-desktop.jpg);
+        width: 301px;
     }
 
     .card_second-section {
-        width: 301px;
+        margin: 34px 35px 32px 34px;
+    }
+    
+    .card__second-section__title {
+        margin-top: 17px;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+    
+    .card__second-section__description {
+        margin-bottom: 25px;
     }
  }
